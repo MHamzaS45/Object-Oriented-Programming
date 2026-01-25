@@ -1,15 +1,11 @@
 #main.py
 from coin_acceptor import CoinAcceptor
 
-
-def show_menu():
+def main():
     print("1 - Insert coin")
     print("2 - Show coins")
     print("3 - Return coins")
     print("0 - Exit program")
-
-
-def main():
     coin_acceptor = CoinAcceptor()
     print("Program starting.")
 
