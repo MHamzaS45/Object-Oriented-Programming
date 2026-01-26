@@ -14,24 +14,20 @@ def main():
             if coin == -1:
                 print("Exiting program.")
                 break
-                
             elif coin == 0:
                 print("Returning coins...")
-                amount, value = coin_acceptor.returnCoins()
+                amount, value = coin_acceptor.returnCoins()       # return data type
                 print(f"{amount} coins with {value}€ value returned.")
                 print(f"Inserted coins = {coin_acceptor.getAmount()}, value = {coin_acceptor.getValue()}€")
-
             else:
                 print("Inserting...")
                 coin_acceptor.insertCoin(coin)
                 print(f"Inserted coins = {coin_acceptor.getAmount()}, "
                 print(f"value = {coin_acceptor.getValue()}€" )
-
+                      
         except ValueError:
             print("Please enter a valid coin value.")
-
-    print("Thank you for using the program.")
-    print("Program ending.")
+     print("Program ending.")
 
 
 if __name__ == "__main__":
