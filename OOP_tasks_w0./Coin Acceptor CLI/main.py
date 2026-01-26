@@ -16,7 +16,7 @@ def main():
                 break
             elif coin == 0:
                 print("Returning coins...")
-                amount, value = coin_acceptor.returnCoins()       # return data type
+                amount, value = coin_acceptor.returnCoins()       # return data type for both amount and value. A swifter approach
                 print(f"{amount} coins with {value}€ value returned.")
                 print(f"Inserted coins = {coin_acceptor.getAmount()}, value = {coin_acceptor.getValue()}€")
             else:
