@@ -1,24 +1,8 @@
-''''
-Open Visual Studio Code (in your project directory)
-• Create readme.md
-• Start making notes
-• # Main topic
-• ## Each slide topic
-• Empty row before content
-• Embed code with
-• ```py - starting code block
-• ``` - for closing code block
-• Add url: [cat example](https://example.com/cat)
-• Add screenshot
-• Drag screenshot into the directory
-• Refer: [name](./screenshot_filename.png)
-''''
-
 # **OOP W1.2 - The Four Pillars**
 
 Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects, which contain data (attributes) and behavior (methods). It helps organize code in a reusable and structured way. 
 
-Add url: [cat example](https://example.com/cat)
+[Sources](https://www.geeksforgeeks.org/python/python-oops-concepts/#:~:text=Four%20Pillars%20of%20OOP%20in%20Python)
 
 Embed code with:
 
