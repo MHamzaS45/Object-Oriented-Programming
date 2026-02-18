@@ -88,7 +88,7 @@ circle = Circle()
 print(circle.area())
 ```
 > [!NOTE]
-> Never commit your real API key or put it directly in the source code.
+> After defining the abstract class, never attempt to inherit the object directly. Instead, inherit the abstract class first. 
 ---
 
 ## Polymorphism
