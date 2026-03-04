@@ -116,6 +116,4 @@ account.deposit(500)
 print(account.get_balance())
 ```
 
-## License
 
-The code is free to use and modify for your own projects.
