@@ -11,7 +11,6 @@ def main():
 
     while True:
       try:  
-        show_menu()
         choice = input("Your choice: ")
         if choice == "1":
             coin_acceptor.insertCoin()

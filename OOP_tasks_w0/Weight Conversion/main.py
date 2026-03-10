@@ -29,7 +29,7 @@ def main():
        elif choice == "0":
             print("Program ending.")
             break
-        else:
+       else:
             print("Invalid choice. Please try again.")
      except ValueError:
        print("Invalid output. Please re-enter with a valid integer option")

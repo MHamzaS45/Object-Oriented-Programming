@@ -16,18 +16,18 @@ def main():
                 break
             elif coin == 0:
                 print("Returning coins...")
-                amount, value = coin_acceptor.returnCoins()       # return data type for both amount and value. A swifter approach
+                amount, value = coin_acceptor2.returnCoins()       # return data type for both amount and value. A swifter approach
                 print(f"{amount} coins with {value}€ value returned.")
-                print(f"Inserted coins = {coin_acceptor.getAmount()}, value = {coin_acceptor.getValue()}€")
+                print(f"Inserted coins = {coin_acceptor2.getAmount()}, value = {coin_acceptor2.getValue()}€")
             else:
                 print("Inserting...")
-                coin_acceptor.insertCoin(coin)
-                print(f"Inserted coins = {coin_acceptor.getAmount()}, "
-                print(f"value = {coin_acceptor.getValue()}€" )
+                coin_acceptor2.insertCoin(coin)
+                print(f"Inserted coins = {coin_acceptor2.getAmount()}, ")
+                print(f"value = {coin_acceptor2.getValue()}€" )
                       
         except ValueError:
             print("Please enter a valid coin value.")
-     print("Program ending.")
+        print("Program ending.")
 
 
 if __name__ == "__main__":
