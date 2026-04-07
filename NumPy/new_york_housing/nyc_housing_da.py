@@ -14,7 +14,7 @@ import seaborn as sns                          # Statistical data visualization
 import folium                                  # Interactive maps
 from IPython.display import display
 
-sns.set_style('darkgrid')                     # Improved aesthetics for plots
+sns.set_style('darkgrid')                     # Setting style for plots
 
 
 #################################
