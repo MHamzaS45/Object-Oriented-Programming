@@ -112,17 +112,36 @@ plt.show()
 # Create a base map centered around New York City
 nyc_center = [df["LATITUDE"].mean(), df["LONGITUDE"].mean()]
 m = folium.Map(location=nyc_center, zoom_start=10)
+ 
+cheap_threshold = 300                                    
+df_cheapest = df[df["price_per_sqft"] < cheap_threshold]
+
+# Limit for performance
+df_cheapest = df.sample(min(300, len(df_cheapest)), random_state=42)
 
 # Add markers (limit for performance)
-for _, row in df.sample(min(300, len(df))).iterrows():
+
+for _, row in df_cheapest.iterrows():
+    
+    # Color condition
+    if row["price_per_sqft"] < cheap_threshold:
+        color = "green"   # cheap
+    else:
+        color = "blue"    # others
+
     folium.CircleMarker(
         location=[row["LATITUDE"], row["LONGITUDE"]],
         radius=4,
-        popup=f"${row['PRICE']:.2f}/sqft",
-        color="blue",   
+        popup=f"${row['price_per_sqft']:.2f}/sqft",
+        color=color,
         fill=True,
         fill_opacity=0.6
     ).add_to(m)
+
+# Save map
+m.save("NumPy\\new_york_housing\\images\\nyc_housing_map.html")
+
+# Display map
 m
 
 # Save map
