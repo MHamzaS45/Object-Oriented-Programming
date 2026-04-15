@@ -8,7 +8,7 @@ import pygame
 # MUSIC SETUP
 # =============================
 pygame.mixer.init()
-pygame.mixer.music.load("music.mp3")  # <-- put your mp3 file here
+pygame.mixer.music.load("NumPy\\python_ui\\music.mp3")  # <-- put your mp3 file here
 pygame.mixer.music.play(-1)
 
 

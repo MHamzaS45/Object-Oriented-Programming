@@ -138,9 +138,6 @@ for _, row in df_cheapest.iterrows():
         fill_opacity=0.6
     ).add_to(m)
 
-# Save map
-m.save("NumPy\\new_york_housing\\images\\nyc_housing_map.html")
-
 # Display map
 m
 
